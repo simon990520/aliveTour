@@ -1,0 +1,70 @@
+page-chat {
+    .scroll-content {
+        top: 0% !important;
+        background-color: color($colors, dark);
+    }
+}
+
+.bg{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6272b5+37,76cfe4+100 */
+background: #6272b5; /* Old browsers */
+background: -moz-linear-gradient(45deg, #6272b5 37%, #76cfe4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #6272b5 37%,#76cfe4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #6272b5 37%,#76cfe4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6272b5', endColorstr='#76cfe4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+.chat{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    .video{
+        margin-top: 0% !important;
+        width: 100%;
+        margin: auto;
+        height: 80%;
+        background: #424549;
+        border: 1px #424549 solid;
+        border-radius: 10px;
+    }
+
+    .name{
+        color: #ffffff;
+        font-size: 1.4em;
+        margin-top: 10%;
+
+        .poin{
+            color: #a2d5e3;
+        }
+    }
+
+    .mycall{
+        width: 40%;
+        padding: 0.1em;
+        border: 1px #424549 solid;
+        background: #424549;
+        border-radius: 20px;
+        color: #fff;
+        margin-top: 0em; 
+    }
+    .botones{
+        
+        .myicon{
+            color: #ffffff;
+            font-size: 2.2em;
+
+        }
+
+        .right{
+            float: right;
+        }
+    }
+}
+
+
+}
+

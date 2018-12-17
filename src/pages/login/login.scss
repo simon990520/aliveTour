@@ -1,0 +1,80 @@
+page-login {
+    .scroll-content {
+        top:0% !important;
+        background-color: color($colors, dark);
+        padding: 0 !important;
+    }
+}
+
+.mybglogin{
+    width: 100%;
+}
+
+.con{
+    width: 90%;
+    margin: auto;
+    margin-top: -20%;
+    text-align: right;
+
+    .re{
+        color: #fff;
+        font-size: 1.7em;
+        text-align: left;
+    }
+
+    .icon{
+        color: #fff;
+        font-size: 2.2em;
+        margin-left: 0.5em;
+        margin-top: 8%; 
+    }
+}
+
+.myconten{
+    color: #fff;
+    margin-top: 2em !important;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.deacuerdo{
+    color: #fff !important;
+    font-size: 0.9em;
+
+}
+
+.myinput{
+    width: 100%;
+    padding: 1.2em;
+    border: 1px #424549 solid;
+    background: #424549;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 2em; 
+}
+
+.botones{
+    width: 100%;
+    margin-top: 1em !important;
+}
+
+.registe{
+    width: 40%;
+    padding: 1.2em;
+    border: 1px #616bb2 solid;
+    background: #616bb2;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.inicia{
+    width: 40%;
+    padding: 1.2em;
+    border: 1px #424549 solid;
+    background: #424549;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 1em; 
+    margin-left: 18%;
+}

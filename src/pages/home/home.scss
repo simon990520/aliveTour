@@ -1,3 +1,102 @@
-page-home {
+.myhead{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#76cfe4+20,76cfe4+46,76cfe4+52,76cfe4+54,6272b5+99 */
+background: #76cfe4; /* Old browsers */
+background: -moz-linear-gradient(top, #76cfe4 20%, #76cfe4 46%, #76cfe4 52%, #76cfe4 54%, #6272b5 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #76cfe4 20%,#76cfe4 46%,#76cfe4 52%,#76cfe4 54%,#6272b5 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #76cfe4 20%,#76cfe4 46%,#76cfe4 52%,#76cfe4 54%,#6272b5 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76cfe4', endColorstr='#6272b5',GradientType=0 ); /* IE6-9 */
+    padding-bottom: 0.5em;
 
+}
+
+.scroll-content {
+    top: 5% !important;
+    background-color: color($colors, dark);
+}
+
+.menu{
+    width: 10%;
+    background: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+.pamela{
+    color: #fff !important;
+    text-align: left;
+}
+
+page-home {
+    .fixed-content {
+        background-color: color($colors, dark);
+    }
+    .accordion-list {
+        background: color($colors, dark);
+        height: 100%;
+    }
+    .item-md{
+        background-color:#424549 ;
+        color: #fff;
+
+        .item-md p {
+            margin: 0 0 2px;
+            overflow: inherit;
+            font-size: 1.4rem;
+            line-height: normal;
+            text-overflow: inherit;
+            color: #fff;
+        }
+    }
+    .section {
+        background:#424549;
+        color: #939395;
+        margin-bottom: 4px;
+        ion-icon {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px #6dcde0 solid;
+            color: #fff;
+            background-color:#6dcde0;
+        }
+    }
+
+    .add{
+        text-align:right;
+    }
+    .section-active {
+        background: #313335;
+        color: #fff;
+    }
+ 
+    .child {
+        background: #424549;
+        color: #000;
+        margin-bottom: 4px;
+    }
+    .child-item {
+        background: #424549;
+        color: #fff;
+        padding: 10px;
+        h2 {
+            cursor: pointer;
+        }
+    }
+    .label {
+        margin: 0px;
+    }
+    .list {
+        margin-bottom: 4px;
+    }
+}
+
+.avatar{
+    background: none !important;
+    width: 100%;
+
+/*.myimg{
+    width: 50px;
+    height: 50px;
+}*/
 }

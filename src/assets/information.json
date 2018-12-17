@@ -1,0 +1,53 @@
+{
+    "items": [
+        {
+            "name": "TU ACTIVIDAD",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": "Pastrami pork belly ball tip andouille corned beef jerky shankle landjaeger. Chicken chuck porchetta picanha, ham brisket tenderloin venison meatloaf landjaeger jowl.",
+                    "price": "$25"
+                }
+            ]
+        },
+        {
+            "name": "AMIGOS",
+            "children": [
+                {
+                    "name": "Juan",
+                    "information": "Activo (Ahora)",
+                    "price": true
+                },
+                {
+                    "name": "Paul",
+                    "information": "Activo hace 5 minutos.",
+                    "price": false
+                }
+            ]
+        },
+        {
+            "name": "NOTICIAS",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99"
+                }
+            ]
+        },
+        {
+            "name": "CLANES",
+            "children":[
+                {
+                    "name":"TODO-TERRENO (0/7)",
+                    "price": false
+                }
+            ]
+        }
+    ]
+}

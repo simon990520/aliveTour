@@ -1,18 +1,81 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<!-- 
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content class="all" padding>
+  <accordion>
 </ion-content>
+-->
+<!--
+  Generated template for the InitPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+    <div class="myhead">
+      <button class="menu" menuToggle>
+        <ion-icon name="ios-more"></ion-icon>
+      </button>
+      <ion-title>
+          <ion-list>
+              <ion-item class="avatar">
+                <ion-avatar item-start>
+                  <img class="myimg" src="../../assets/imgs/avatar.jpg">
+                </ion-avatar>
+                <h2 class="pamela">PAMELA PEREZ</h2>
+                <p class="pamela">Sobre ruedas</p>
+              </ion-item>
+            </ion-list>
+      </ion-title>
+    </div>
+  </ion-header>
+   
+  <ion-content>
+    <ion-list class="accordion-list">
+
+
+      <!-- First Level -->
+      <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
+        <!-- Toggle Button -->
+        <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+          {{ item.name }}
+          <ion-icon item-right name="md-add" *ngIf="!item.open"></ion-icon>
+          <ion-icon item-right name="md-remove" *ngIf="item.open"></ion-icon>
+        </button>
+   
+        <ion-list class="child" *ngIf="item.children && item.open" no-lines>
+          <!-- Second Level -->
+          <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
+            <!-- Toggle Button -->
+            <button ion-item (click)="toggleItem(i, j)" *ngIf="child.children" class="child" detail-none>
+              <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
+              <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
+              {{ child.name }}
+            </button>
+   
+            <!-- Direct Add Button as Fallback -->
+            <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>
+                  <h2 >{{ child.name }}</h2>
+                  <p text-lowercase>{{ child.information }}</p>
+                  <button ion-button outline item-end (click)="openItem('chat')">{{ child.price }}</button>
+            </ion-item>
+   
+            <ion-list *ngIf="child.children && child.open">
+              <!-- Third Level -->
+              <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>
+                <h2>{{ item.name }}</h2>
+                <p text-lowercase>{{ item.information }}</p>
+                <!-- Direct Add Button -->
+                <button ion-button outline item-end (click)="buyItem(item)">{{ item.price }}</button>
+              </ion-item>
+            </ion-list>
+   
+          </ion-list-header>
+        </ion-list>
+        
+      </ion-list-header>
+
+
+    </ion-list>
+  </ion-content>

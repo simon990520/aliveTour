@@ -1,0 +1,32 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="all mybglogin" padding>
+  <img class="mybglogin" src="../../assets/imgs/bglogin.png" alt="">
+  <div class="con">
+    <div class="row">
+        <p class="re">REGISTRATE CON</p>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <ion-icon class="icon" name="logo-facebook"></ion-icon>
+        <ion-icon class="icon" name="logo-google"></ion-icon>
+    </div>
+  </div>
+
+  <div class="myconten">
+    <p class="deacuerdo">Està de acuerdo con <br> nuestros terminos & condiciones y <br> politicas de privacidad</p>
+
+    <input class="myinput" type="text" placeholder="CORREO">
+    <input class="myinput" type="password" placeholder="CONTRASEÑA">
+    <div class="botones">
+      <button class="registe">REGISTRATE</button>
+      <button (click)="openPage('home')" class="inicia" >INICIAR </button>
+    </div>
+  </div>
+</ion-content>
