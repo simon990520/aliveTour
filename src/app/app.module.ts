@@ -12,6 +12,7 @@ import { InitPageModule } from '../pages/init/init.module';
 import { HomePageModule } from '../pages/home/home.module';
 import { AccordionComponent } from '../components/accordion/accordion';
 import { HttpModule } from '@angular/http';
+import { RecorridoPageModule } from '../pages/recorrido/recorrido.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpModule } from '@angular/http';
     IonicModule.forRoot(MyApp),
     LoginPageModule,
     InitPageModule,
+    RecorridoPageModule,
     HomePageModule,
     HttpModule
   ],

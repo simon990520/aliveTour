@@ -44,7 +44,7 @@
           <ion-icon item-right name="md-remove" *ngIf="item.open"></ion-icon>
         </button>
    
-        <ion-list class="child" *ngIf="item.children && item.open" no-lines>
+        <ion-list  class="child" *ngIf="item.children && item.open" no-lines>
           <!-- Second Level -->
           <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
             <!-- Toggle Button -->
@@ -57,18 +57,19 @@
             <!-- Direct Add Button as Fallback -->
             <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>
                   <h2 >{{ child.name }}</h2>
-                  <p text-lowercase>{{ child.information }}</p>
-                  <button ion-button outline item-end (click)="openItem('chat')">{{ child.price }}</button>
+                  <p>{{ child.information }}</p>
+                  <button *ngIf="child.page" ion-button outline item-end (click)="openItem('chat')">{{ child.price }}</button>
+                  <button *ngIf="!child.page" ion-button outline item-end (click)="openItem('recorrido')">{{ child.price }}</button>
             </ion-item>
    
             <ion-list *ngIf="child.children && child.open">
               <!-- Third Level -->
               <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>
                 <h2>{{ item.name }}</h2>
-                <p text-lowercase>{{ item.information }}</p>
+                <p>{{ item.information }}</p>
                 <!-- Direct Add Button -->
-                <button ion-button outline item-end (click)="buyItem(item)">{{ item.price }}</button>
-              </ion-item>
+                <button class="reco"  (click)="buyItem(item)">{{ item.price }}</button>
+            </ion-item>
             </ion-list>
    
           </ion-list-header>

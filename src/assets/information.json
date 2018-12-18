@@ -14,14 +14,34 @@
             "name": "AMIGOS",
             "children": [
                 {
-                    "name": "Juan",
-                    "information": "Activo (Ahora)",
-                    "price": true
+                    "name": "Laura Guecha",
+                    "information": " ",
+                    "price": "online",
+                    "page": true
                 },
                 {
-                    "name": "Paul",
-                    "information": "Activo hace 5 minutos.",
-                    "price": false
+                    "name": "Melitza Cervante",
+                    "information": " ",
+                    "price": "off",
+                    "page": true
+                },
+                {
+                    "name": "German Almendra",
+                    "information": " ",
+                    "price": "online",
+                    "page": true
+                },
+                {
+                    "name": "Migel Zapata",
+                    "information": " ",
+                    "price": "online",
+                    "page": true
+                },
+                {
+                    "name": "Alejandro Petrova",
+                    "information": " ",
+                    "price": "off",
+                    "page": true
                 }
             ]
         },
@@ -29,14 +49,19 @@
             "name": "NOTICIAS",
             "children": [
                 {
-                    "name": "Special Academy Pizza",
-                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
-                    "price": "$25"
+                    "name": "Melitza Cervante ",
+                    "information": "Compartiò una ruta",
+                    "price": "Hace 6 min"
                 },
                 {
-                    "name": "Pizza Ionic",
-                    "information": "Pork chop pastrami landjaeger chuck brisket",
-                    "price": "$19.99"
+                    "name": "German Almendra ",
+                    "information": "¡Ha alcanzado un logro! ",
+                    "price": "Hace 12h"
+                },
+                {
+                    "name": "Migel Zapata  ",
+                    "information": "Cambiò el estado: 'estamos  melos'",
+                    "price": "Hace 1 dia"
                 }
             ]
         },
@@ -45,7 +70,8 @@
             "children":[
                 {
                     "name":"TODO-TERRENO (0/7)",
-                    "price": false
+                    "price": "INICIAR RECORRIDO",
+                    "page": false
                 }
             ]
         }

@@ -13,32 +13,66 @@ page-init {
 
 }
 
-.aline{
-    color: #fff;
-    font-size: 1.3em;
+
+
+.mybotones{
+    margin: auto !important;
+    margin-top: 40% !important; 
+    width: 60% !important;
+
+    .aline{
+        color: #fff;
+        margin-left: 10%; 
+        font-size: 1.3em;
+    }
+
+    .register{
+        width:80%;
+        padding: 1.2em;
+        border: 1px #616bb2 solid;
+        background: #616bb2;
+        border-radius: 15px;
+        margin-left: 10%; 
+        color: #fff;
+    }
+    
+    .iniciar{
+        width: 80%;
+        padding: 1.2em;
+        border: 1px #424549 solid;
+        background: #424549;
+        border-radius: 15px;
+        color: #fff;
+        margin-top: 1em;
+        margin-left: 10%; 
+    }
+
+    .point{
+
+        width: 20%;
+        margin: auto;
+        margin-top: 20%;
+        .point1{
+            width: 0.7em;
+            height: 0.7em;
+            background: #fff;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 20%;
+            
+        }
+    
+        .point2{
+            width: 0.7em;
+            height: 0.7em;
+            background: rgba(255, 255, 255, 0.5) !important;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 20%;
+            
+        }
+    }
+
+    
 }
 
-.botones{
-    margin: auto;
-    margin-top: 100%; 
-    width: 50%;
-}
-
-.register{
-    width: 100%;
-    padding: 1.2em;
-    border: 1px #616bb2 solid;
-    background: #616bb2;
-    border-radius: 15px;
-    color: #fff;
-}
-
-.iniciar{
-    width: 100%;
-    padding: 1.2em;
-    border: 1px #424549 solid;
-    background: #424549;
-    border-radius: 15px;
-    color: #fff;
-    margin-top: 1em; 
-}
